@@ -1,6 +1,6 @@
 # Prints the name of the current day.
 
 run_segment() {
-	date +"%a"
+	env LANG=en date +"%a"
 	return 0
 }
