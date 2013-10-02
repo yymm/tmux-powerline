@@ -14,7 +14,8 @@ run_segment() {
 
 	rx=$(echo "${RXDIF} / 1024 / ${sleeptime}" | bc)
 	tx=$(echo "${TXDIF} / 1024 / ${sleeptime}" | bc)
-	echo -e "⇊ ${rx}K/s ⇈ ${tx}K/s"
+	#echo -e "⇊ ${rx}K/s ⇈ ${tx}K/s"
+	echo -e "↓ ${rx}K/s ↑ ${tx}K/s"
 
 	return 0
 }
